@@ -1,6 +1,10 @@
 = rooby
 
-Description goes here.
+== Dependencies
+
+aspell:
+
+    brew install aspell --lang=en
 
 == Contributing to rooby
  
