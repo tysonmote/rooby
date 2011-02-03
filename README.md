@@ -10,9 +10,9 @@
 
 ## Dependencies
 
-*aspell*
-
-    brew install aspell --lang=en
+* **aspell**
+  
+  `brew install aspell --lang=en`
 
 ## Contributing to rooby
  
