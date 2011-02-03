@@ -1,5 +1,13 @@
 = rooby
 
+    class Dude
+      def self.dude
+        "Totally rad!"
+      end
+    end
+    
+    Dude.duude # "Totally rad!"
+
 == Dependencies
 
 aspell:
