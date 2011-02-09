@@ -1,7 +1,14 @@
 module Rooby
+  def speller
+    @speller ||= {}
+  end
+
   def spelling_for( word )
+    return i_know_that_word if i_know_that_word = speller[word]
     out = %x[echo '#{word}' | aspell -a --ignore-case]
-    out.scan(/[a-z\']+(?=,|\z)/i).first
+    spelling = out.scan(/[a-z\']+(?=,|\z)/i).first
+    speller[word] = spelling
+    spelling
   end
   
   def method_missing( method, *args)
